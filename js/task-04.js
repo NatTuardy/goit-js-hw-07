@@ -20,10 +20,7 @@
 
 const decr = document.querySelector("button[data-action='decrement']");
 const incr = document.querySelector("button[data-action='increment']");
-const myValue = document.querySelector("#value");
-console.log(decr);
-console.log(incr);
-console.log(myValue);
+const myValue = document.querySelector('#value');
 let counterValue = 0;
 const countDecr = function() {
   counterValue -= 1;
@@ -34,5 +31,5 @@ const countIncr = function() {
   myValue.textContent = counterValue;
 };
 
-decr.addEventListener("click", countDecr);
-incr.addEventListener("click", countIncr);
+decr.addEventListener('click', countDecr);
+incr.addEventListener('click', countIncr);

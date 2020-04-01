@@ -8,16 +8,14 @@
 <br />
 <span id="text">Абракадабра!</span> */
 
-const inputFind = document.getElementById("font-size-control");
-const text = document.getElementById("text").style;
-console.log(text.fontSize);
-inputFind.addEventListener("input", makeBiggerText);
+const inputFind = document.getElementById('font-size-control');
+const text = document.getElementById('text').style;
+
+inputFind.addEventListener('input', makeBiggerText);
 function makeBiggerText(e) {
   const inputE = e.target.value;
-  console.log("e.target: ", inputE);
 
   if (e.target.value) {
-    text.fontSize = inputE + "px";
+    text.fontSize = inputE + 'px';
   }
 }
-// makeBiggerText();
